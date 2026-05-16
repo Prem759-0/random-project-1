@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: #0a0a0f;
+    --bg-surface: #0d1117;
+    --bg-elevated: #161b22;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-muted: #484f58;
+    
+    --accent: #00f5ff;
+    --accent-secondary: #39ff14;
+    --border: #30363d;
+    --border-strong: #484f58;
+    
+    --success: #39ff14;
+    --warning: #ffb300;
+    --error: #f85149;
+  }
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--bg-base);
+  overflow: hidden;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
